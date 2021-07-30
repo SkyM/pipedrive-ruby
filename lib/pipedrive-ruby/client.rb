@@ -30,9 +30,8 @@ module Pipedrive
 
     # Initializes the Client
     # @option config [Configuration] Configuration for initializing the object, default to Configuration.default
-    def initialize( access_token, config = Configuration.default )
+    def initialize( config = Configuration.default )
       @config = config
-      @config.access_token = access_token
 
       @user_agent = "Swagger-Codegen/#{VERSION}/ruby"
       @default_headers = {
